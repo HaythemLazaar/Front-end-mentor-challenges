@@ -1,0 +1,119 @@
+$primary-color: hsl(185, 75%, 39%);
+$font-head: 'Kumbh Sans', sans-serif;
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: $font-head;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+
+}
+
+
+body{
+    height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bgt{
+    z-index: -2;
+    margin-right: 1100px;
+    margin-top: 2rem;
+}
+
+.bgb{
+    z-index: -2;
+   
+    height: auto;
+    margin-top: -50px;
+    margin-left: 1100px;
+}
+
+.contain{
+    position: absolute;
+}
+
+.card{
+    max-width: 26.25rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 104px -34px rgba(0,0,0,0.20);
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    align-items: center;
+    font-family: $font-head;
+    flex: 100px 1 0;
+
+    img{
+        width: 100%;
+        height: 10rem;
+    }
+
+    .profile-image{
+        width: 25%;
+        height: 25%;
+        margin-top: -3.1rem;
+        border-radius: 50%;
+        border: 0.3em solid white;
+    }
+
+    pre{
+        font-family: $font-head;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: hsl(229, 23%, 23%);
+    }
+
+    .grey1{
+        font-weight: 700;
+        color:hsl(227, 10%, 46%);
+    }
+
+    .grey2{
+        font-weight: 400;
+        color:hsl(227, 10%, 46%);
+        font-size: 80%;
+    }
+
+    .grey{
+        font-weight: 400;
+        color:hsl(227, 10%, 46%);
+    }
+
+    .bot{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        border-top: 1px solid hsla(227, 10%, 46%, 0.2);
+        margin-top: 1.5rem;
+        pre{
+            margin: 2rem;
+            text-align: center;
+        }
+
+        span{
+            font-size: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bgb{
+        opacity: 0.4;
+    }
+    .bgt{
+        opacity: 0.4;
+    }
+}
